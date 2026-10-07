@@ -1,5 +1,5 @@
 blueprint:
-  name: Light Switch Control V2
+  name: Light Switch Control v2.1
   description: >-
     Control a light with a 4-button Hue remote. Button 1: short press cycles
     color temperature through the kelvin ladder, long press flashes the light
@@ -11,6 +11,9 @@ blueprint:
     Full Auto, Manual Intercept, Full Manual, Restore Scene. The remote must
     expose button event entities supporting the event types initial_press,
     short_release and long_release (Hue dimmer switch / light switch).
+
+    Release note: v2.1 - fixed service data (data_template -> data) so the
+    blueprint imports without a validation error.
   domain: automation
   source_url: https://raw.githubusercontent.com/gulaclementiner/home-assistant/main/blueprints/hue-light-switch.yaml
   homeassistant:
