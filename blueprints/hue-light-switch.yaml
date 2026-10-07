@@ -155,7 +155,7 @@ actions:
           - action: light.turn_on
             target:
               entity_id: !input light
-            data_template:
+            data:
               brightness: >
                 {% set ladder = kelvin_ladder | split(",") | map("trim") | map("int") | list %}
                 {% set kelvin = state_attr(light_entity, "color_temp_kelvin") | int(1000) %}
@@ -194,7 +194,7 @@ actions:
               - action: light.turn_on
                 target:
                   entity_id: !input light
-                data_template:
+                data:
                   brightness: >
                     {% set ladder = kelvin_ladder | split(",") | map("trim") | map("int") | list %}
                     {% set kelvin = state_attr(light_entity, "color_temp_kelvin") | int(1000) %}
@@ -211,7 +211,7 @@ actions:
           - action: light.turn_on
             target:
               entity_id: !input light
-            data_template:
+            data:
               brightness_step_pct: "{{ brightness_step }}"
       - conditions:
           - condition: trigger
@@ -220,7 +220,7 @@ actions:
           - action: light.turn_on
             target:
               entity_id: !input light
-            data_template:
+            data:
               brightness_step_pct: "-{{ brightness_step }}"
       - conditions:
           - condition: trigger
