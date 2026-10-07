@@ -15,7 +15,7 @@ blueprint:
     Release note: v2.1 - fixed service data (data_template -> data) so the
     blueprint imports without a validation error.
   domain: automation
-  source_url: https://raw.githubusercontent.com/gulaclementiner/home-assistant/main/blueprints/hue-light-switch.yaml
+  source_url: https://github.com/gulaclementiner/home-assistant/blob/main/blueprints/hue-light-switch.yaml
   homeassistant:
     min_version: "2026.9.0"
   input:
