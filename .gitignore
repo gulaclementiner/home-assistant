@@ -1,0 +1,8 @@
+# Home Assistant secrets and local-only files
+secrets.yaml
+*.env
+.env
+*.log
+__pycache__/
+*.pyc
+.DS_Store
