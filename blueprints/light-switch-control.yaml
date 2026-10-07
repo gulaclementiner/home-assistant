@@ -1,5 +1,5 @@
 blueprint:
-  name: Light Switch Control
+  name: Light Switch Control V2
   description: >-
     Control a light with a 4-button Hue remote. Button 1: short press cycles
     color temperature through the kelvin ladder, long press flashes the light
